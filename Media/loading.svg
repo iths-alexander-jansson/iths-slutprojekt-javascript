@@ -1,0 +1,11 @@
+<svg id="loading" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="320" height="320" viewBox="0 0 320 320">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.431"/>
+      <stop offset="0.36" stop-color="#cb2d2d"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0.655"/>
+    </linearGradient>
+  </defs>
+  <path id="iconfinder_spinner_126578" d="M160,0a20.123,20.123,0,0,0-17.1,9.63A19.63,19.63,0,0,0,140,20V60a20,20,0,0,0,40,0V20A20.007,20.007,0,0,0,160,0Zm0,240a19.994,19.994,0,0,0-20,20v40a20,20,0,0,0,40,0V260A19.994,19.994,0,0,0,160,240Zm84.84-136.56,28.28-28.3a20,20,0,1,0-28.28-28.28L216.56,75.14a20,20,0,0,0,28.28,28.3ZM75.14,216.56,46.86,244.84a20,20,0,0,0,28.28,28.28l28.28-28.28a20,20,0,0,0-28.28-28.28Zm0-169.7A20,20,0,0,0,46.86,75.14l28.28,28.3a20,20,0,1,0,28.28-28.3Zm169.7,169.7a20,20,0,0,0-28.28,28.28l28.28,28.28a20,20,0,0,0,28.28-28.28ZM300,140H260a20,20,0,0,0,0,40h40a20,20,0,0,0,0-40ZM80,160a20.007,20.007,0,0,0-20-20H20a20,20,0,0,0,0,40H60A20.007,20.007,0,0,0,80,160Z" fill="url(#linear-gradient)"/>
+  <path id="Path_57" data-name="Path 57" d="M37,0A37,37,0,1,1,0,37,37,37,0,0,1,37,0Z" transform="translate(123 123)" fill="#cb2d2d"/>
+</svg>

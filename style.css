@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: termina, sans-serif;
+  color: #171a21;
+}
+body {
+  background: linear-gradient(to bottom, #617073 0%, #7a93ac 100%);
+}
+.preloader {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100%;
+  background-color: linear-gradient(to bottom, #90dffe 0%, #38a3d1 100%);
+  background-image: url(./media/idskar.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease;
+}
+
+.preloader #drone {
+  height: 100px;
+  animation: drone 2.5s ease infinite alternate;
+  position: fixed;
+}
+
+@keyframes drone {
+  from {
+    transform: translateY(-450px);
+  }
+  to {
+    transform: translateY(-350px);
+  }
+}
+.preloader #loading {
+  height: 200px;
+  position: fixed;
+  -webkit-animation: rotate-scale-down 3s ease-in-out infinite both;
+  animation: rotate-scale-down 3s ease-in-out infinite both;
+}
+@-webkit-keyframes rotate-scale-down {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(0.5) rotateZ(180deg);
+    transform: scale(0.5) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
+  }
+}
+@keyframes rotate-scale-down {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(0.5) rotateZ(180deg);
+    transform: scale(0.5) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
+  }
+}
+
+.preloader-finish {
+  opacity: 0;
+  pointer-events: none;
+}
+body > div.video-container {
+  width: 100%;
+  height: 100%;
+}
+body > div.video-container > video {
+  width: 100%;
+  height: 100%;
+  max-height: 100vh;
+}
+#logo {
+  position: absolute;
+  max-width: 400px;
+  position: -webkit-sticky;
+  left: 50%;
+  transform: translate(-50%, -110%);
+}
+
+section {
+  display: grid;
+  grid-template-columns: 20% auto;
+  max-width: 90%;
+  margin: auto;
+}
+
+figure {
+  margin: 0;
+  text-align: center;
+}
+article {
+  padding: 2em;
+  font-size: 1.5em;
+}
+h1 {
+  font-size: 15vw;
+
+  display: grid;
+  grid-template-columns: auto;
+  max-width: 85%;
+  margin: auto;
+}
+h3 {
+  font-size: 2em;
+}
+.focus-in-expand {
+  -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@-webkit-keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+p {
+  font-size: 1em;
+  font-family: "Montserrat", sans-serif;
+}
+
+#dronepilot {
+  width: 100%;
+  max-width: 1200px;
+  padding-top: 2em;
+}
+
+.icon {
+  width: 80%;
+  max-width: 200px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 150px;
+  padding-top: 40px;
+  z-index: -1;
+}
+
+.entered {
+  -webkit-animation: slide-in-bl 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s
+    both;
+  animation: slide-in-bl 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
+}
+
+@-webkit-keyframes slide-in-bl {
+  0% {
+    -webkit-transform: translateY(1000px) translateX(-1000px);
+    transform: translateY(1000px) translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) translateX(0);
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bl {
+  0% {
+    -webkit-transform: translateY(1000px) translateX(-1000px);
+    transform: translateY(1000px) translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) translateX(0);
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+}
+.portfolio {
+  max-width: 1200px;
+}
+
+.main-img img,
+.imgs img {
+  width: 100%;
+}
+
+.imgs {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 10px 10px;
+}
+
+.imgs img {
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in 1 forwards;
+}
