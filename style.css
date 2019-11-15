@@ -5,8 +5,9 @@
   font-family: termina, sans-serif;
   color: #171a21;
 }
+
 body {
-  background: linear-gradient(to bottom, #617073 0%, #7a93ac 100%);
+  background: linear-gradient(to bottom, #2baeea 0%, #269bd1 100%);
 }
 .preloader {
   position: fixed;
@@ -25,22 +26,28 @@ body {
 }
 
 .preloader #drone {
-  height: 100px;
-  animation: drone 2.5s ease infinite alternate;
+  width: 100%;
+  max-width: 20%;
+  animation: drone 2.5s ease alternate infinite;
   position: fixed;
+  top: 100px;
 }
 
 @keyframes drone {
   from {
-    transform: translateY(-450px);
+    transform: translateY(-0px);
   }
   to {
-    transform: translateY(-350px);
+    transform: translateY(-50px);
   }
 }
+
 .preloader #loading {
-  height: 200px;
+  width: 100%;
+  max-width: 10%;
   position: fixed;
+  bottom: 2%;
+  right: 2%;
   -webkit-animation: rotate-scale-down 3s ease-in-out infinite both;
   animation: rotate-scale-down 3s ease-in-out infinite both;
 }
@@ -88,15 +95,24 @@ body > div.video-container > video {
 }
 #logo {
   position: absolute;
-  max-width: 400px;
+  width: 100%;
+  max-width: 30%;
   position: -webkit-sticky;
   left: 50%;
   transform: translate(-50%, -110%);
+  background-color: rgba(255, 250, 250, 0.5);
+  border-radius: 5px;
+  padding: 10px;
 }
-
+#lofot {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+}
 section {
   display: grid;
-  grid-template-columns: 20% auto;
+  grid-template-columns: 10% auto;
   max-width: 90%;
   margin: auto;
 }
@@ -104,6 +120,7 @@ section {
 figure {
   margin: 0;
   text-align: center;
+  z-index: -2;
 }
 article {
   padding: 2em;
@@ -111,23 +128,25 @@ article {
 }
 h1 {
   font-size: 15vw;
-
-  display: grid;
-  grid-template-columns: auto;
-  max-width: 85%;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+  color: #11465e;
+}
+h2 {
+  color: #11465e;
 }
 h3 {
-  font-size: 2em;
+  font-size: 4vw;
+  color: #11465e;
 }
 .focus-in-expand {
-  -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1s
     both;
-  animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1s both;
 }
-@-webkit-keyframes focus-in-expand {
+@-webkit-keyframes text-focus-in {
   0% {
-    letter-spacing: -0.5em;
     -webkit-filter: blur(12px);
     filter: blur(12px);
     opacity: 0;
@@ -138,9 +157,8 @@ h3 {
     opacity: 1;
   }
 }
-@keyframes focus-in-expand {
+@keyframes text-focus-in {
   0% {
-    letter-spacing: -0.5em;
     -webkit-filter: blur(12px);
     filter: blur(12px);
     opacity: 0;
@@ -153,23 +171,27 @@ h3 {
 }
 
 p {
-  font-size: 1em;
+  font-size: 1.5vw;
   font-family: "Montserrat", sans-serif;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  color: #0f3c51;
 }
 
 #dronepilot {
   width: 100%;
   max-width: 1200px;
-  padding-top: 2em;
+  padding-top: 1em;
 }
 
 .icon {
   width: 80%;
-  max-width: 200px;
+  max-width: 60%;
   position: sticky;
   position: -webkit-sticky;
   top: 150px;
   padding-top: 40px;
+  padding-bottom: 40px;
   z-index: -1;
 }
 
@@ -204,7 +226,7 @@ p {
   }
 }
 .portfolio {
-  max-width: 1200px;
+  max-width: 110vh;
 }
 
 .main-img img,
@@ -231,4 +253,121 @@ p {
 .fade-in {
   opacity: 0;
   animation: fadeIn 0.5s ease-in 1 forwards;
+}
+.myButton {
+  box-shadow: 0px 9px 35px 0px #ffffff;
+  background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+  background-color: #ffffff;
+  border-radius: 42px;
+  display: inline-block;
+  cursor: pointer;
+  color: #666666;
+  padding: 16px 34px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+  margin-top: 1em;
+}
+.myButton:hover {
+  background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+  background-color: #f6f6f6;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+input[type="submit"] {
+  padding: 15px 30px;
+  background: #e7e7e7;
+  border: none;
+  border-radius: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.input input[type="text"] {
+  width: 200px;
+  height: 55px;
+  padding: 5px 10px;
+  background: #e7e7e7;
+  border: none;
+  border-radius: 1px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+div.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.name {
+  grid-area: 1 / 1 / 2 / 3;
+}
+.nation {
+  grid-area: 1 / 1 / 2 / 4;
+}
+.temp {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.weathericon {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.desc {
+  grid-area: 2 / 3 / 3 / 4;
+}
+.wind {
+  grid-area: 2 / 4 / 3 / 5;
+}
+
+footer {
+  width: 100%;
+  height: 100vh;
+  background-color: #11465e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parent {
+  display: inline-grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  place-items: center center;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.div3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.div4 {
+  grid-area: 1 / 4 / 2 / 5;
+}
+.div5 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.div6 {
+  grid-area: 2 / 2 / 3 / 4;
+}
+.div7 {
+  grid-area: 2 / 4 / 3 / 5;
+}
+.div8 {
+  grid-area: 3 / 2 / 4 / 4;
+}
+a {
+  text-decoration: none;
+  color: #eee;
 }

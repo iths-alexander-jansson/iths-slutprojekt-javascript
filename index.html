@@ -25,6 +25,7 @@
     </div>
     <img id="logo" src="./media/REC.logo.svg" alt="" />
     <h1>Welcome</h1>
+    <img id="lofot" src="./Media/lofot.jpg" alt="" />
     <section>
       <figure>
         <img class="icon" src="./Media/about.svg" />
@@ -34,8 +35,7 @@
         <h3>Info</h3>
 
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam,
-          laudantium.
+          We are pretty decent at flying drones and taking photographs, we'd like to show you here on this site. And we also think that sharing is caring, and therefore we would like for this site to be a guide towards less experienced aerial photographers. So we will explain some tips and tricks in order for you to catch your bucket shot!
         </p>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi
@@ -70,6 +70,7 @@
 
       <article>
         <h3>Portfolio</h3>
+        <p>Here are some example images that we have shot during the past year! Click on the thumbnails to display the photograph you want to see!</p>
 
         <div class="portfolio">
           <div class="main-img">
@@ -87,6 +88,7 @@
             <img src="media/Gallery/8.jpg" />
           </div>
         </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, illo quis labore reiciendis rerum molestias assumenda cum alias repellendus sed velit architecto voluptatem! Voluptas sapiente nostrum nemo perferendis ullam et!</p>
       </article>
     </section>
     <section>
@@ -98,8 +100,7 @@
         <h3>The perfect conditions</h3>
 
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam,
-          laudantium.
+            Aerial photography often require some planning ahead. Nice weather and moderate winds are super important when flying, especially if you want to catch really beautiful shots.
         </p>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi
@@ -124,8 +125,29 @@
           velit nobis reprehenderit dolores eveniet atque, sapiente corporis
           fugiat architecto!
         </p>
-      </article>
+     
+<div>
+  <h2>Is it a good time to fly right now?</h2>
+    <p class="main">
+      Get current weather report from any city in the world!
+    </p>
+    <div class="input">
+      <input type="text" placeholder="What city?" class="input_text" />
+    </div>
+    <div class="button">
+      <input type="submit" value="Submit" class="submit" />
+    </div>
+
+    <div class="container">
+      <p class="wind"></p>
+        <p class="name" id="name"></p>
+        <p class="temp"></p>
+        <img class="weathericon" src="" />
+        <p class="desc"></p>
+    </div>
+ </article>
     </section>
+
     <section>
       <figure>
         <img class="icon" src="./Media/gallery.svg" />
@@ -161,10 +183,41 @@
           velit nobis reprehenderit dolores eveniet atque, sapiente corporis
           fugiat architecto!
         </p>
+        <p>Click on the button below and we'll take you to our fully automatic, fullscreen and infinite image gallery, leave it running grab a cup of java and dream away!</p>
+        <a href="./gallery.html" class="myButton">Gallery</a>
       </article>
     </section>
+   <footer>
+
+      <div class="parent">
+        <div class="div1"><a href="#"
+          ><img src="Media/instagram.svg" alt="Instagram logo"
+        /></a></div>
+        <div class="div2"><a href="#"
+          ><img src="Media/youtube.svg" alt="Youtube logo"
+        /></a></div>
+        <div class="div3"><a href="#"
+          ><img src="Media/twitter.svg" alt="Twitter logo"
+        /></a></div>
+        <div class="div4"><a href="#"
+          ><img src="Media/facebook.svg" alt="Fackebook logo"
+        /></a></div>
+        <div class="div5"><a href="#">CONTACT</a></article></div>
+        <div class="div6"><a href="#">TERMS</a></article></div>
+        <div class="div7"><a href="#">FEEDBACK</a></article></div>
+        <div class="div8"><a class="dark" href="http://ajstockholmab.se/index.html"
+          >©ReC Photography 2020</a</div>
+        </div>
+
+
+
+
+
+    </footer>
     <script src="./main.js"></script>
     <script src="./enterView.js"></script>
     <script src="./enterViewSelector.js"></script>
+    <script src="./api.js"></script>
+    <script src="./sweetalert2/dist/sweetalert2.all.min.js"></script>
   </body>
 </html>

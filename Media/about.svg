@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="284" height="293" viewBox="0 0 284 293">
   <g id="about" transform="translate(2 2)">
-    <g id="Layer_4" data-name="Layer 4">
+    <g id="Layer_4" data-name="Layer 4" opacity="0.518">
       <path id="Path_56" data-name="Path 56" d="M140,280A140,140,0,1,1,280,140,140,140,0,0,1,140,280ZM140,8.75A131.25,131.25,0,1,0,271.25,140,131.25,131.25,0,0,0,140,8.75Z" stroke="#000" stroke-width="4"/>
     </g>
-    <text id="i" transform="translate(104 233)" font-size="243" font-family="Termina-Medium, Termina" font-weight="500"><tspan x="0" y="0">i</tspan></text>
+    <text id="i" transform="translate(104 233)" font-size="243" font-family="Termina-Medium, Termina" font-weight="500" opacity="0.501"><tspan x="0" y="0">i</tspan></text>
   </g>
 </svg>
