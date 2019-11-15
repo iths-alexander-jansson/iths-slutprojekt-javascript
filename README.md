@@ -18,6 +18,7 @@ Ett till fullscreen-galleri (var tvungen att på slutet skapa en till css fil f�
 
 # Libraries
 Sweetalert2
+
 enterView
 
 Målet var att skapa en snygg hemsida, med god interaktivitet och lite coola animationer. Rätt nöjd ;)
